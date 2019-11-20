@@ -8,3 +8,9 @@
     document.querySelector('.color-4').classList.add('purple')
 
     document.querySelector('.color-5').classList.add('green')
+
+    function addRed(){
+        document.querySelector('.brush').classList.toggle('red')
+    }
+
+    document.querySelector('.color-1').addEventListener('click',addRed)
