@@ -12,35 +12,37 @@
     
     
     // event listeners//
-    document.querySelector('.color-1').addEventListener('click', addBlue('.current-brush'))
-    // document.querySelector('.color-2').addEventListener('click',addBlue('.current-brush'))
-    // document.querySelector('.color-3').addEventListener('click',addPink)
-    // document.querySelector('.color-4').addEventListener('click',addPurple)
-    // document.querySelector('.color-5').addEventListener('click',addGreen)
-    // document.querySelector('.square').addEventListener('click',paint)
+    document.querySelector('.color-1').addEventListener('click', addRed('.current-brush'))
+    document.querySelector('.color-2').addEventListener('click',addBlue('.current-brush'))
+    document.querySelector('.color-3').addEventListener('click',addPink('.current-brush'))
+    document.querySelector('.color-4').addEventListener('click',addPurple('.current-brush'))
+    document.querySelector('.color-5').addEventListener('click',addGreen('.current-brush'))
+    document.querySelector('.square').addEventListener('click',paint)
     
-    function addRed(classNamez){
+    function addRed(classNameZ){
         // document.querySelector('.current-brush').classList.remove('')
+        if(document.querySelector(classNameZ).classList.contains('.red')===false){
+
+            document.querySelector(classNameZ).classList.add('red')
+        }
+    }
+
+    function addBlue(classNameZ){
         
-        document.querySelector(classNamez).classList.toggle('red')
-    }
+        document.querySelector(classNameZ).classList.toggle('blue')
 
-    function addBlue(classNamez){
+    }
+    function addPink(classNameZ){
         
-        document.querySelector(classNamez).classList.toggle('blue')
+        document.querySelector(classNameZ).classList.toggle('pink')
 
     }
-    function addPink(className){
-        
-        document.querySelector(className).classList.toggle('pink')
+    function addPurple(classNameZ){
+        document.querySelector(classNameZ).classList.toggle('purple')
 
     }
-    function addPurple(className){
-        document.querySelector(className).classList.toggle('purple')
-
-    }
-    function addGreen(className){
-        document.querySelector(className).classList.toggle('green')
+    function addGreen(classNameZ){
+        document.querySelector(classNameZ).classList.toggle('green')
 
     }
 
