@@ -9,6 +9,8 @@
 
     document.querySelector('.color-green').classList.add('green')
 
+    document.querySelector('.color-white').classList.add('white')
+
     
     
     // event listeners//
@@ -17,7 +19,7 @@
     document.querySelector('.color-pink').addEventListener('click',addColor)
     document.querySelector('.color-purple').addEventListener('click',addColor)
     document.querySelector('.color-green').addEventListener('click',addColor)
-    // document.querySelector('.square').addEventListener('click',paint)
+    document.querySelector('.color-white').addEventListener('click',addColor)
     
     // One function that:
     // * Checks what palette square was clicked.
@@ -26,7 +28,6 @@
     const currentBrush = document.querySelector('.current-brush')
     function addColor(event){
         document.querySelector('.current-brush').classList.replace(currentBrush.classList[1], event.target.classList[2])
-        // event.target.classList.add('red')
         
         
     }
@@ -43,38 +44,4 @@
     }
     
 
-    // function addBlue(){
-        
-    //     document.querySelector('.current-brush').classList.toggle('blue')
-
-    // }
-    // function addPink(){
-        
-    //     document.querySelector('.current-brush').classList.toggle('pink')
-
-    // }
-    // function addPurple(){
-    //     document.querySelector('.current-brush').classList.toggle('purple')
-
-    // }
-    // function addGreen(){
-    //     document.querySelector('.current-brush').classList.toggle('green')
-
-    //}
-
-    // function paint(event){
-    //     const brush = document.querySelector('.current-brush')
-    //     const canvasSquare = document.querySelectorAll('.square')
-
-    //     for (let i = 0)
-        
-        
-
-        
-        
-        
-        
-        
-            
-    // }
     
